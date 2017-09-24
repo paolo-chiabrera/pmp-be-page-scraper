@@ -1,0 +1,27 @@
+{
+  "name": "pmp-be-page-scraper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/paolo-chiabrera/pmp-be-page-scraper.git",
+  "author": "=paolo.chiabrera <=paolo.chiabrera@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "standard --fix",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "compression": "^1.7.0",
+    "convict": "^4.0.0",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "express-healthcheck": "^0.1.0",
+    "express-status-monitor": "^1.0.0",
+    "forever": "^0.15.3",
+    "helmet": "^3.8.1",
+    "morgan": "^1.8.2",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}
