@@ -55,9 +55,9 @@ app.get('/', (req, res) => {
   })
 })
 
-// start app
-app.listen(config.port, () => {
+// start server
+const server = app.listen(config.port, () => {
   logger.info(config)
 })
 
-module.exports = app
+module.exports = server

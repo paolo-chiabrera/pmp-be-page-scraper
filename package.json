@@ -6,8 +6,9 @@
   "author": "=paolo.chiabrera <=paolo.chiabrera@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "standard --fix",
-    "start": "node index.js"
+    "lint": "eslint **/*.js",
+    "start": "node index.js",
+    "test": "mocha --require test/mocha.config.js test/**/*.test.js"
   },
   "dependencies": {
     "compression": "^1.7.0",
@@ -22,6 +23,9 @@
     "winston": "^2.3.1"
   },
   "devDependencies": {
-    "standard": "^10.0.3"
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "eslint": "^4.9.0",
+    "mocha": "^4.0.1"
   }
 }
